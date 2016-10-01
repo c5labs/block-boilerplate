@@ -44,10 +44,15 @@ class Controller extends BlockController
 
     /**
      * The block types default set within the 'add block' fly out panel.
+     * 
+     * Valid sets included with the core are: 
+     * basic, navigation, forms, social & multimedia.
+     *
+     * Leaving the value as null will add the block type to the 'other' set.
      *
      * @var string
      */
-    protected $btDefaultSet = 'other';
+    protected $btDefaultSet = null;
 
     /**
      * The block types table name;
