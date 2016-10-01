@@ -259,7 +259,7 @@ class Controller extends BlockController
      */
     public function validate(array $data)
     {
-        $errors = new Concrete\Core\Error\Error();
+        $errors = new \Concrete\Core\Error\Error();
 
         /**
          * if ('Oliver' !== $data['name']) {

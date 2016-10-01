@@ -11,5 +11,5 @@ defined('C5_EXECUTE') or die('Access Denied.');
  */
 ?>
 <div class="block-boilerplate">
-    Block Boilerplate
+    <span>Block Boilerplate</span>
 </div>
