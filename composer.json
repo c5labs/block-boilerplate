@@ -1,0 +1,16 @@
+{
+    "name": "c5dev/block-boilerplate",
+    "description": "A block boilerplate to start building from.",
+    "type": "concrete5-block",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Oliver Green",
+            "email": "oliver@c5dev.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "composer/installers": "dev-concrete5-installation-path-updates"
+    }
+}
