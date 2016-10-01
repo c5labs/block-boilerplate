@@ -12,6 +12,8 @@ defined('C5_EXECUTE') or die('Access Denied.');
 
 ?>
 <div id="blockBoilerplateForm">
+    <span>Edit the blocks form.php to add input fields here.</span>
+
     <!--<div class="form-group">
         <?php echo $form->label('my_field', t('My Text Field'))?>
         <?php echo $form->text('my_field', 1, $info['my_field']); ?>
