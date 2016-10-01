@@ -5,6 +5,7 @@
  * @author   Oliver Green <oliver@c5dev.com>
  * @license  See attached license file
  */
+namespace Application\Block\BlockBoilerplate;
 
 use Concrete\Core\Block\BlockController;
 
@@ -18,7 +19,7 @@ defined('C5_EXECUTE') or die('Access Denied.');
  * @author   Oliver Green <oliver@c5dev.com>
  * @license  See attached license file
  */
-class BlockBoilerplate extends BlockController
+class Controller extends BlockController
 {
     /**
      * The block types name.
@@ -32,7 +33,7 @@ class BlockBoilerplate extends BlockController
      *
      * @var string
      */
-    protected $btDescription = 'Code to start creating a custom block from.';
+    protected $btDescription = 'A block boilerplate to start building from.';
 
     /**
      * The block types handle.
