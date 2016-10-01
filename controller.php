@@ -61,29 +61,29 @@ class Controller extends BlockController
      * Is this an internal block type?
      * If set to true the block will not be shown in the 'add block' flyout panel?
      *
-     * @var boolean
+     * @var bool
      */
     protected $btIsInternal = false;
 
     /**
      * Does the block support inline addition?
      *
-     * @var boolean
+     * @var bool
      */
     protected $btSupportsInlineAdd = false;
 
     /**
      * Does the block support inline editing?
      *
-     * @var boolean
+     * @var bool
      */
     protected $btSupportsInlineEdit = false;
 
     /**
      *  If true, container classes will not be wrapped around this block type in
-     *  edit mode (if the theme in question supports a grid framework)
+     *  edit mode (if the theme in question supports a grid framework).
      *
-     * @var boolean
+     * @var bool
      */
     protected $btIgnorePageThemeGridFrameworkContainer = false;
 
@@ -91,7 +91,7 @@ class Controller extends BlockController
      * Prevents the block from being aliased when duplicating a page or creating
      * a page from defaults, if true the block will be duplicated instead.
      *
-     * @var boolean
+     * @var bool
      */
     protected $btCopyWhenPropagate = false;
 
@@ -109,14 +109,14 @@ class Controller extends BlockController
      *
      * @var string
      */
-    protected $btInterfaceWidth = "400";
+    protected $btInterfaceWidth = '400';
 
     /**
      * The blocks form height.
      *
      * @var string
      */
-    protected $btInterfaceHeight = "400";
+    protected $btInterfaceHeight = '400';
 
     /**
      * Here you can defined helpers that the blocks add 
@@ -124,13 +124,13 @@ class Controller extends BlockController
      * 
      * @var array
      */
-    protected $helpers = array('form');
+    protected $helpers = ['form'];
 
     /**
      * When block caching is enabled, this means that the block's database record
      * data will also be cached.
      *
-     * @var boolean
+     * @var bool
      */
     protected $btCacheBlockRecord = true;
 
@@ -139,25 +139,25 @@ class Controller extends BlockController
      *  of the block will be saved and delivered without rendering the view()
      *  function or hitting the database at all.
      *
-     * @var boolean
+     * @var bool
      */
     protected $btCacheBlockOutput = false;
 
     /**
      * When block caching is enabled and output caching is enabled for a block,
      * this is the value in seconds that the cache will last before being refreshed.
-     * (specified in seconds)
+     * (specified in seconds).
      *
-     * @var boolean
+     * @var bool
      */
     protected $btCacheBlockOutputLifetime = 3600;
 
     /**
      * This determines whether a block will cache its output on POST. Some blocks
      * can cache their output but must serve uncached output on POST in order to
-     * show error messages, etc
+     * show error messages, etc.
      *
-     * @var boolean
+     * @var bool
      */
     protected $btCacheBlockOutputOnPost = false;
 
@@ -165,7 +165,7 @@ class Controller extends BlockController
      * Determines whether a block that can cache its output will continue to cache
      * its output even if the current user viewing it is logged in.
      *
-     * @var boolean
+     * @var bool
      */
     protected $btCacheBlockOutputForRegisteredUsers = false;
 
@@ -176,7 +176,7 @@ class Controller extends BlockController
      *
      * @var array
      */
-    protected $btExportPageColumns = array();
+    protected $btExportPageColumns = [];
 
     /**
      * When this block is exported, any database columns found in this array will
@@ -186,7 +186,7 @@ class Controller extends BlockController
      *
      * @var array
      */
-    protected $btExportFileColumns = array();
+    protected $btExportFileColumns = [];
 
     /**
      * When this block is exported, any database columns found in this array will
@@ -195,7 +195,7 @@ class Controller extends BlockController
      *
      * @var array
      */
-    protected $btExportPageTypeColumns = array();
+    protected $btExportPageTypeColumns = [];
 
     /**
      * When this block is exported, any database columns found in this array will
@@ -204,7 +204,7 @@ class Controller extends BlockController
      *
      * @var array
      */
-    protected $btExportPageFeedColumns = array();
+    protected $btExportPageFeedColumns = [];
 
     /**
      * Wraps the block view in a container element with the class specified here.
@@ -264,9 +264,8 @@ class Controller extends BlockController
         /**
          * if ('Oliver' !== $data['name']) {
          *     $errors['name'] = "You input the incorrect name.";
-         * }
+         * }.
          */
-
         if ($errors->has()) {
             return $errors;
         }
@@ -284,7 +283,7 @@ class Controller extends BlockController
      */
     public function save(array $data)
     {
-        /**
+        /*
          * if (isset($data['name']) && '' === trim($data['name'])) {
          *     unset($data['name']);
          * }
