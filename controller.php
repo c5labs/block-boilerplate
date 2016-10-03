@@ -60,7 +60,7 @@ class Controller extends BlockController
      *
      * @var string
      */
-    protected $btTable = null;
+    protected $btTable = 'btBlockBoilerplate';
 
     /**
      * Is this an internal block type?
