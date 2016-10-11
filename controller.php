@@ -219,6 +219,16 @@ class Controller extends BlockController
     protected $btWrapperClass = '';
 
     /**
+     * Runs when the blocks view template is rendered.
+     * 
+     * @return void
+     */
+    public function view()
+    {
+        //
+    }
+
+    /**
      * Run when the blocks add template is rendered.
      *
      * @return  void
