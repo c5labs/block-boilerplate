@@ -1,12 +1,12 @@
 {
-    "name": "c5dev/block-boilerplate",
+    "name": "c5labs/block-boilerplate",
     "description": "A block boilerplate to start building from.",
     "type": "concrete5-block",
     "license": "MIT",
     "authors": [
         {
             "name": "Oliver Green",
-            "email": "oliver@c5dev.com"
+            "email": "oliver@c5labs.com"
         }
     ],
     "minimum-stability": "dev",
