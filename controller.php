@@ -63,6 +63,22 @@ class Controller extends BlockController
     protected $btTable = 'btBlockBoilerplate';
 
     /**
+     * The blocks form width.
+     *
+     * @var string
+     */
+    protected $btInterfaceWidth = '400';
+
+    /**
+     * The blocks form height.
+     *
+     * @var string
+     */
+    protected $btInterfaceHeight = '400';
+
+    /* @section advanced */
+
+    /**
      * Is this an internal block type?
      * If set to true the block will not be shown in the 'add block' flyout panel?
      *
@@ -108,20 +124,6 @@ class Controller extends BlockController
      * @return bool
      */
     protected $btIncludeAll = false;
-
-    /**
-     * The blocks form width.
-     *
-     * @var string
-     */
-    protected $btInterfaceWidth = '400';
-
-    /**
-     * The blocks form height.
-     *
-     * @var string
-     */
-    protected $btInterfaceHeight = '400';
 
     /**
      * Here you can defined helpers that the blocks add 
@@ -217,6 +219,8 @@ class Controller extends BlockController
      * @var string
      */
     protected $btWrapperClass = '';
+
+    /* @endsection advanced */
 
     /**
      * Runs when the blocks view template is rendered.
@@ -341,6 +345,8 @@ class Controller extends BlockController
         return '';
     }
 
+    /* @section advanced */
+
     /**
      * Runs when a block is being exported.
      *
@@ -364,4 +370,6 @@ class Controller extends BlockController
     {
         parent::import($page, $areaHandle, $blockNode);
     }
+
+    /* @endsection advanced */
 }
