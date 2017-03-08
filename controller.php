@@ -5,8 +5,10 @@
  * @author   Oliver Green <oliver@c5labs.com>
  * @license  See attached license file
  */
+
 namespace Application\Block\BlockBoilerplate;
 
+use SimpleXMLElement;
 use Concrete\Core\Block\BlockController;
 
 defined('C5_EXECUTE') or die('Access Denied.');
@@ -273,10 +275,10 @@ class Controller extends BlockController
      * Run when the add or edit forms are submitted. This should return true if
      * validation is successful or a Concrete\Core\Error\Error() object if it fails.
      *
-     * @param  array  $data
+     * @param  $data
      * @return bool|Error
      */
-    public function validate(array $data)
+    public function validate($data)
     {
         $errors = new \Concrete\Core\Error\Error();
 
@@ -297,10 +299,10 @@ class Controller extends BlockController
      * within the data array are mapped to columns found in the blocks table. Any
      * post-processing of the blocks data before storage should be completed here.
      *
-     * @param  array  $data
+     * @param  $data
      * @return
      */
-    public function save(array $data)
+    public function save($data)
     {
         /*
          * if (isset($data['name']) && '' === trim($data['name'])) {
@@ -359,14 +361,14 @@ class Controller extends BlockController
     }
 
     /**
-     * Rund when a block is being imported.
+     * Runs when a block is being imported.
      *
      * @param  Page          $page
      * @param  string          $areaHandle
-     * @param  SmpleXMLElement $blockNode
-     * @return [boid
+     * @param  SimpleXMLElement $blockNode
+     * @return void
      */
-    public function import($page, $areaHandle, SmpleXMLElement $blockNode)
+    public function import($page, $areaHandle, SimpleXMLElement $blockNode)
     {
         parent::import($page, $areaHandle, $blockNode);
     }
