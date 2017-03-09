@@ -1,5 +1,5 @@
 ## concrete5 Block Type Boilerplate
-**Requires concrete 5.7.5+**
+**Requires concrete 5.7.5+ | 8.0+**
 
 A base to begin building your concrete5 block type.
 
